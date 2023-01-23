@@ -16,10 +16,10 @@ jobs:
     - uses: srt32/git-actions@v0.0.3
       with:
         args: git submodule update --init --recursive
-    - name: use Node.js 16.x
+    - name: use Node16 main.js
       uses: actions/setup-node@v1
       with:
-        node-version: 16.x
+        node-version: node16
     - name: npm i Hugo
       uses: peaceiris/actions-hugo@v2
     - name: Build
