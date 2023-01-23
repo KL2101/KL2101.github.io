@@ -32,7 +32,7 @@ jobs:
       uses: manyuanrong/setup-ossutil@master
       with:
         endpoint: oss-cn-hongkong.aliyuncs.com #修改为自己的Endpoint
-        access-key-id: ${{ LTAI5t6H4ezn6LFQgTvrSAus }}
-        access-key-secret: ${{ AYf7Vasapd0sccLAGgVVYReRiJONcj }}
+        access-key-id: ${{ secrets.KEY }}
+        access-key-secret: ${{ secrets.SECRET }}
     - name: cp aliyun oss
       run: ossutil cp -rf public oss://kl-blog/ #修改为自己的
