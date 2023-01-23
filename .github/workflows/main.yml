@@ -21,6 +21,7 @@ jobs:
       uses: peaceiris/actions-hugo@v2
 
     - name: setup aliyun oss
+      uses: actions/checkout@master
       uses: manyuanrong/setup-ossutil@v2.0
       with:
         endpoint: oss-cn-hongkong.aliyuncs.com #修改为自己的Endpoint
